@@ -1,11 +1,18 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import JobList from "../pages/JobList";
+
+
+
+
 
 function App() {
-
   return (
-    <div>
-      <h1>ola mundo</h1>
-    </div>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<JobList />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
